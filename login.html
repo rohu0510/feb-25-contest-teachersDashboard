@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 class="heading">Teacher's Portal - Login</h1>
+  <form class="form" onsubmit="return logIn()">
+    <input type="email" id="email" name="email" placeholder="Enter E-mail" required><br><br>
+    <input type="password" id="password" name="password" placeholder="Enter Password" required><br><br>
+    <button class="btn" type="submit">Log In</button>
+  </form>
+  <h3>If you don't have an account, please Sign up first!</h3>
+  <button class="btn" onclick="window.location.href='index.html'">Sign up</button>
+  <script src="login.js"></script>
+</body>
+
+</html>

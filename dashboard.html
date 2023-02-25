@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DashBoard Page</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 class="heading">Teacher's Portal - Dashboard</h1>
+  <h3 class="sub-heading">Welcome <span id="userName"></span>!</h3>
+  <h3 class="sub-heading">Your E-mail id:- <span id="email"></span></h3>
+  <form class="form" onsubmit="return changePassword()">
+    <input type="password" id="oldPassword" name="oldPassword" placeholder="Enter Old Password" required><br><br>
+    <input type="password" id="newPassword" name="newPassword" placeholder="Enter New Password" required><br><br>
+    <input type="password" id="confirmNewPassword" name="confirmNewPassword" placeholder="Confirm New Password"
+      required><br><br>
+    <button class="btn" type="submit">Change Password</button>
+  </form>
+  <br>
+  <button class="btn" onclick="logOut()">Log Out</button>
+  <script src="dashboard.js"></script>
+</body>
+
+</html>
